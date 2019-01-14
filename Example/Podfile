@@ -1,10 +1,20 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+=begin
+target 'ImageSlideshow_Example' do
+  pod "ImageSlideshow", :path => "../"
+  pod "ImageSlideshow/AFURL", :path => "../"
+  pod "ImageSlideshow/Alamofire", :path => "../"
+  pod "ImageSlideshow/SDWebImage", :path => "../"
+  pod "ImageSlideshow/Kingfisher", :path => "../"
+end
+=end
+
 target 'ImageSlideshow_Example' do
     pod "ImageSlideshow", :path => "../"
     pod "ImageSlideshow/AFURL", :path => "../"
-    pod "ImageSlideshow/Alamofire", :path => "../"
+    pod "ImageSlideshow/Alamofire",'~> 3.5'
     pod "ImageSlideshow/SDWebImage", :path => "../"
     pod "ImageSlideshow/Kingfisher", :path => "../"
 end
